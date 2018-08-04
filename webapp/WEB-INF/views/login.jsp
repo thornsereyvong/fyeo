@@ -27,10 +27,10 @@
 				<div class="clearfix"></div>
 				<form id="form-login" method="POST" action="${pageContext.request.contextPath}/login">
 					<div class="form-group">
-						<input type="text" value="" class="form-control" placeholder="Username" value="" name="tc_username" id="tc_username" required>
+						<input type="text" class="form-control" placeholder="Username" value="balancika" name="tc_username" id="tc_username" required>
 					</div>
 					<div class="form-group">
-						<input type="password" value="" class="form-control" placeholder="Password" value="" name="tc_password" id="tc_password" required>
+						<input type="password" class="form-control" placeholder="Password" value="balancika@123" name="tc_password" id="tc_password" required>
 					</div>
 					
 					<div class="row">

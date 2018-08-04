@@ -24,6 +24,30 @@ public class MainController {
 	
 	//End Item Path
 	
+	// shop Path
+	@RequestMapping(value = {"/list-shop"}, method = RequestMethod.GET)
+	public String listShop(ModelMap model, HttpServletRequest request){
+		model.addAttribute("title", "Shop Listing");
+		model.addAttribute("pageCode", "ShopList");
+		return "shop/shopList";
+	}
+	
+	
+	//End shop Path
+	
+	
+	// Order Path
+	@RequestMapping(value = {"/list-order"}, method = RequestMethod.GET)
+	public String listOrder(ModelMap model, HttpServletRequest request){
+		model.addAttribute("title", "Order Listing");
+		model.addAttribute("pageCode", "OrderList");
+		return "order/orderList";
+	}
+	
+	
+	//End orders Path
+	
+	
 	// User Path
 	@RequestMapping(value = {"/user-management"}, method = RequestMethod.GET)
 	public String listUser(ModelMap model, HttpServletRequest request){

@@ -39,17 +39,32 @@
 						<a href="${pageContext.request.contextPath}/list-item"><i class="fa fa-circle-o"></i>Color</a>
 					</li>
 					<li>
+						<a href="${pageContext.request.contextPath}/list-item"><i class="fa fa-circle-o"></i>Len color</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/list-item"><i class="fa fa-circle-o"></i>Frame category</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/list-item"><i class="fa fa-circle-o"></i>Frame material</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/list-item"><i class="fa fa-circle-o"></i>Shape</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/list-item"><i class="fa fa-circle-o"></i>Activity</a>
+					</li>
+					<li>
 						<a href="${pageContext.request.contextPath}/list-item"><i class="fa fa-circle-o"></i>Size</a>
 					</li>
 				</ul>
 			</li>
 			<li>
-				<a href="${pageContext.request.contextPath}/">
+				<a href="${pageContext.request.contextPath}/list-shop">
 					<i class="fa fa-home"></i> &nbsp;&nbsp;<span>Shop</span> 
 				</a>
 			</li>
 			<li>
-				<a href="${pageContext.request.contextPath}/">
+				<a href="${pageContext.request.contextPath}/list-order">
 					<i class="fa fa-file-text-o"></i> &nbsp;&nbsp;<span>Order</span> 
 				</a>
 			</li>

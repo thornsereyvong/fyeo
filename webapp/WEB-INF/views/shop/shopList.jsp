@@ -35,11 +35,11 @@
 		<jsp:include page="${request.contextPath}/menu"></jsp:include>
 		<div class="content-wrapper" ng-controller="authoriCon">
 			<section class="content-header">
-			<h1>Item List</h1>
+			<h1>Shop List</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}"><i
 						class="fa fa-home"></i> Home</a></li>
-				<li><a href="#">Item List</a></li>
+				<li><a href="#">Shop List</a></li>
 			</ol>
 			</section>
 			<section class="content ng-cloak">
@@ -47,8 +47,7 @@
 						<div class="box-header" style="padding: 0px;">
 							<div class="col-sm-12">
 								<button style="margin-top: 10px;" class="btn btn-default"><i class="fa fa-plus"></i> Create</button>
-								<button style="margin-top: 10px;" class="btn btn-default"><i class="fa fa-sign-out"></i> Export</button>
-								<button style="margin-top: 10px;" class="btn btn-default"><i class="fa fa-sign-in"></i> Import</button>
+								
 							</div>
 						</div>
 						<div class="box-body">
@@ -60,27 +59,19 @@
 												<th class="width-75 text-center">
 													No
 					                        	</th>
-												<th class="min-width-90">Brand</th>
-												<th class="min-width-90">Brand Category</th>
-												<th>Model</th>
-												<th>Frame Color</th>
-												<th>Front Color</th>
-												<th>Size</th>
-												<th class="min-width-90">Price HK</th>
-												<th class="min-width-90">Price $</th>
+												<th class="min-width-90">Shop</th>
+												<th class="min-width-90">Tel</th>
+												<th>Email</th>
+												<th>Address</th>
 												<th></th>
 											</tr>
 											<tbody id="data-content-post">
-												<tr ng-repeat="item in itemList">
+												<tr ng-repeat="item in shopList">
 													<td>{{$index+1}}</td>
-													<td>{{item.brand}}</td>
-													<td>{{item.cat}}</td>
-													<td>{{item.model}}</td>
-													<td>{{item.frameColor}}</td>
-													<td>{{item.frontColor}}</td>
-													<td>{{item.size}}</td>
-													<td>{{item.upHk}}</td>
-													<td>{{item.upDollar}}</td>
+													<td>{{item.shop}}</td>
+													<td>{{item.tel1}}</td>
+													<td>{{item.email}}</td>
+													<td>{{item.address}}</td>
 													<td></td>
 												</tr>
 											</tbody>
@@ -102,17 +93,14 @@
 		var self = this;
 				
 		app.controller('authoriCon',['$scope','$http',function($scope, $http){
-				$scope.itemList = [
-					{"brand":"Burberry", "cat":"EA1041", "model":"EA1041-3090", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1041", "model":"EA1041-3091", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1041", "model":"EA1041-3092", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1041", "model":"EA1041-3093", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1041", "model":"EA1041-3094", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1042", "model":"EA1041-3090", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1042", "model":"EA1041-3091", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1043", "model":"EA1041-3092", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1043", "model":"EA1041-3093", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60},
-					{"brand":"Burberry", "cat":"EA1043", "model":"EA1041-3094", "frameColor":"BLACK RUBBER", "frontColor":"black","size":"51,52","upHk":100, "upDollar":60}
+				$scope.shopList = [
+					{"shop":"TA Optic", "tel1":"098333208", "tel2":"098333208", "email":"s@gmail.com", "address":"Phnom Penh"},
+					{"shop":"TA Optic", "tel1":"098333208", "tel2":"098333208", "email":"s@gmail.com", "address":"Phnom Penh"},
+					{"shop":"TA Optic", "tel1":"098333208", "tel2":"098333208", "email":"s@gmail.com", "address":"Phnom Penh"},
+					{"shop":"TA Optic", "tel1":"098333208", "tel2":"098333208", "email":"s@gmail.com", "address":"Phnom Penh"},
+					{"shop":"TA Optic", "tel1":"098333208", "tel2":"098333208", "email":"s@gmail.com", "address":"Phnom Penh"},
+					{"shop":"TA Optic", "tel1":"098333208", "tel2":"098333208", "email":"s@gmail.com", "address":"Phnom Penh"},
+					{"shop":"TA Optic", "tel1":"098333208", "tel2":"098333208", "email":"s@gmail.com", "address":"Phnom Penh"},
 				];
 		}]);	
 	</script>
